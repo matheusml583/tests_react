@@ -1,0 +1,27 @@
+.headerBody{
+    width: 100%;
+    min-height: 140px;
+    background-color: #cae0ed;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_logo{
+    float: left;
+    margin-left: 7%;
+    margin-right: 25px;
+}
+
+.Navbar{
+    width: 700px;
+    height: 70px;
+    border: none;
+    float: right;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    justify-content: space-between;
+}

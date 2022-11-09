@@ -1,0 +1,15 @@
+.NavBarBody{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_navbar{
+    color: #6f98cc;
+    font-size: large;
+    text-decoration: none;
+}
+
+.home_btn{
+    color: black;
+}
