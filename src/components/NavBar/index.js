@@ -5,8 +5,8 @@ import setColor from './btns_color.js'
 
 const NavBar = () => {
 
-    const mmm = (name, page) => {
-            setColor(name)
+    const mmm = (name) => {
+        setColor(name)
     }
 
     return(
