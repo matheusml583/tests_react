@@ -4,10 +4,10 @@ import Input from '../input'
 
 const Form = (props) => {
 
-    const [valueNome, setNome] = useState("") 
-    const [valueIdade, setIdade] = useState("") 
-    const [valueEmail, setEmail] = useState("") 
-    const [valueTelefone, setTelefone] = useState("") 
+    const [valueNome, setNome] = useState("")
+    const [valueIdade, setIdade] = useState("")
+    const [valueEmail, setEmail] = useState("")
+    const [valueTelefone, setTelefone] = useState("")
 
     useEffect(()=>{
         console.log(valueNome)
@@ -45,9 +45,12 @@ const Form = (props) => {
                     <Input type='text' placeholder='Bairro' model={valueTelefone} changed={setTelefone} />
                     <Input type='text' placeholder='Cidade' model={valueTelefone} changed={setTelefone} />
                     <Input type='text' placeholder='Estado' model={valueTelefone} changed={setTelefone} />
+                    <button className='btn_submit' onClick={save}>ENVIAR</button>
                 </div>
             </div>
-            <button className='btn_submit' onClick={save}>ENVIAR</button>
+                <div style={{clear: "both", display: "block", paddingLeft: "30px", paddingRight: "60px"}}>
+                    <textarea placeholder='Observações:' className='textarea'></textarea>
+                </div>
         </div>
     )
 }
