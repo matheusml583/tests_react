@@ -33,12 +33,21 @@ const Form = (props) => {
                 <strong>{props.title}</strong>
             </div>
             <div className='contentForm'>
-                <Input type='text' placeholder='Nome' model={valueNome} changed={setNome} />
-                <Input type='number' placeholder='Idade' model={valueIdade} changed={setIdade} />
-                <Input type='text' placeholder='Email' model={valueEmail} changed={setEmail} />
-                <Input type='text' placeholder='Telefone' model={valueTelefone} changed={setTelefone} />
-                <button className='btn_submit' onClick={save}>ENVIAR</button>
+                <div>
+                    <Input type='text' placeholder='Nome do Condomínio' model={valueIdade} changed={setIdade} />
+                    <Input type='text' placeholder='Nome do Sindico' />
+                    <Input type='text' placeholder='Telefone Sindico' />
+                    <Input type='text' placeholder='Telefone Condominio' />
+                    <Input type='text' placeholder='CNPJ' />
+                </div>
+                <div>
+                    <Input type='text' placeholder='CEP' model={valueEmail} changed={setEmail} />
+                    <Input type='text' placeholder='Bairro' model={valueTelefone} changed={setTelefone} />
+                    <Input type='text' placeholder='Cidade' model={valueTelefone} changed={setTelefone} />
+                    <Input type='text' placeholder='Estado' model={valueTelefone} changed={setTelefone} />
+                </div>
             </div>
+            <button className='btn_submit' onClick={save}>ENVIAR</button>
         </div>
     )
 }

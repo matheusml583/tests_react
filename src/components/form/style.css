@@ -19,3 +19,10 @@
     font-size: xx-large;
     padding-top: 10px;
 }
+
+.contentForm{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
