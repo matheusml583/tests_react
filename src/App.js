@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Pendentes from './pages/Pendentes';
 import FormPage from './pages/Form';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 </Route>
               </Routes>
             </div>
+            <Footer />
       </Router>
     </div>
   );
